@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal — Modern Design Studio</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<!--
+  JOURNAL
+  Press links, then posts carried over from the Modern Design Brothers blog (newest first).
+  One <article class="post"> per post; data-category builds the filter buttons.
+-->
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="process.html">Process</a>
+    </nav>
+    <a class="wordmark" href="index.html">Modern Design Studio</a>
+    <nav class="site-nav site-nav--end" aria-label="Secondary">
+      <a href="journal.html" aria-current="page">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">
+      <span data-menu-label>Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="work.html"><span>01</span>Work</a></li>
+      <li><a href="about.html"><span>02</span>About</a></li>
+      <li><a href="process.html"><span>03</span>Process</a></li>
+      <li><a href="journal.html" aria-current="page"><span>04</span>Journal</a></li>
+      <li><a href="contact.html"><span>05</span>Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a data-site="email" data-slot="title"></a>
+      <a data-site="phone" data-slot="short"></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap grid">
+        <div class="page-head__title">
+          <p class="eyebrow" data-reveal>Journal</p>
+          <h1 class="display" data-slot data-lines="2" data-reveal></h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS — links open the original articles -->
+    <section class="section section--flush-top" id="press">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="eyebrow">Press</h2>
+        </div>
+        <div class="press">
+          <a class="press__item" href="https://candysdirt.com/2020/01/15/modern-design-brothers-build-masterpiece-in-east-dallas-hippest-hood/" target="_blank" rel="noopener" data-reveal>
+            <span class="label press__outlet">CandysDirt</span>
+            <span class="subheading press__title">Modern Design Brothers Build Masterpiece in East Dallas’ Hippest Hood</span>
+            <time class="meta press__date" datetime="2020-01-15">15 January 2020</time>
+            <span class="arrow" style="transform: rotate(-45deg)"></span>
+          </a>
+          <a class="press__item" href="https://www.dallasnews.com/sponsored/real-estate/2019/11/17/modern-design-brothers-touts-four-bedroom-design-near-white-rock-lake/" target="_blank" rel="noopener" data-reveal>
+            <span class="label press__outlet">The Dallas Morning News</span>
+            <span class="subheading press__title">Modern Design Brothers touts four-bedroom design near White Rock Lake</span>
+            <time class="meta press__date" datetime="2019-11-17">17 November 2019</time>
+            <span class="arrow" style="transform: rotate(-45deg)"></span>
+          </a>
+          <a class="press__item" href="https://candysdirt.com/2019/11/15/dallas-builders-association-member-spotlight-modern-design-brothers/" target="_blank" rel="noopener" data-reveal>
+            <span class="label press__outlet">CandysDirt</span>
+            <span class="subheading press__title">Dallas Builders Association Member Spotlight: Modern Design Brothers</span>
+            <time class="meta press__date" datetime="2019-11-15">15 November 2019</time>
+            <span class="arrow" style="transform: rotate(-45deg)"></span>
+          </a>
+          <a class="press__item" href="https://dallasbuilders.com/home-of-the-week-modern-design-brothers/" target="_blank" rel="noopener" data-reveal>
+            <span class="label press__outlet">Dallas Builders Association</span>
+            <span class="subheading press__title">Home of the Week: Modern Design Brothers</span>
+            <time class="meta press__date" datetime="2019-11">November 2019</time>
+            <span class="arrow" style="transform: rotate(-45deg)"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS -->
+    <section class="section section--flush-top">
+      <div class="wrap">
+        <div class="toolbar">
+          <div class="chips" data-filter role="group" aria-label="Filter posts"></div>
+        </div>
+
+        <div class="posts" data-filterable>
+        <article class="grid post" id="candys-dirt-modern-design-brothers-build-masterpiece" data-category="Accolades" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2020-01-22">22 January 2020</time>
+            <p class="label post__cats">Accolades</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Candy’s Dirt: “Modern Design Brothers Build Masterpiece”</h2>
+          <div class="body">
+            <p>Huge thanks go out to Elaine Raffel over at Candy’s Dirt for such a lovely article. Candy’s Dirt is one of the authorities on Dallas homes, so it’s wonderful to be recognized by them.</p>
+            <p>Elaine’s article highlights some of our favorite things about the home at 9026 Groveland, including the “sleek and modern” but “warm and inviting” vibe and the quality of the materials.</p>
+            <p>We’re grateful she highlighted our story, too. To us, home building is personal. We’re not a big operation (we are, after all, “Modern Design Brothers” and not “Modern Design Corporation”) and we love the craft. We’re not about churning out product. So, big thanks to Elaine and big thanks to Candy’s Dirt.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 2400 / 1600"><img src="assets/images/groveland/groveland-02.jpg" srcset="assets/images/groveland/groveland-02-sm.jpg 1000w, assets/images/groveland/groveland-02.jpg 2400w" sizes="(max-width: 48rem) 100vw, 60vw" width="2400" height="1600" alt="Groveland street front at dusk with angled roofline and warm lighting" loading="lazy" decoding="async"></div>
+            </figure>
+          </div>
+          <p class="post__links">
+            <a class="link" href="https://candysdirt.com/2020/01/15/modern-design-brothers-build-masterpiece-in-east-dallas-hippest-hood/" target="_blank" rel="noopener">Read the article on CandysDirt <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+            <a class="link" href="groveland.html">See Groveland <span class="arrow"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="building-beautiful-experiences-with-porcelanosa" data-category="Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2020-01-22">22 January 2020</time>
+            <p class="label post__cats">Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Building beautiful experiences with Porcelanosa</h2>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 1024 / 683"><img src="assets/images/journal/journal-01.jpg" width="1024" height="683" alt="Primary bathroom at Groveland with walnut vanity and tiled shower" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">Tile from Porcelanosa ties together the master bath at Groveland.</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>In our design philosophy, details make the difference. Whether it’s the foundation, framing, paint, plumbing, or tile, we only work with vendors and subcontractors who do great work. We pride ourselves on being choosy about the people we work with and building lasting relationships with them.</p>
+            <p>That’s why we’re so pleased to have found Porcelanosa. Porcelanosa manufactures and sells ceramics, stone, and other products. But really, Porcelanosa is dedicated to experience.</p>
+            <p>Floors, walls, countertops, faucets, bathtubs, toilets, lighting, vanities—these are functional items. First and foremost, they have to accomplish their purpose. As the saying goes, form follows function. Our belief, though, is that a good life is beautiful and that a home is not functional unless it is beautiful.</p>
+            <p>That’s why we love Porcelanosa. They are dedicated to creating beautiful experiences in everything they make and do. The recently completed home at 9026 Groveland has tile, vanities, toilets, and cabinetry from them. In the past, we’ve used their faucets, showerheads, shower controls, and more. They use the best materials to create sleek, elegant products—just the way we build our homes.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 1024 / 683"><img src="assets/images/journal/journal-02.jpg" width="1024" height="683" alt="Bathroom with gray floating vanity and vessel sink" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">Porcelanosa’s fine products helped us build a beautiful bathroom for the home at 9026 Groveland.</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>Porcelanosa’s products make life a beautiful experience. They also create amazing events. They sponsored our recent open house at 9026 Groveland, and it was an incredible event. That’s why we’re so excited and grateful that they’re bringing us to Spain to tour their factory. It will surely be a beautiful experience.</p>
+          </div>
+          <div class="video" data-youtube="1eR7HG2203E" data-title="Porcelanosa Experience">
+            <img src="https://i.ytimg.com/vi/1eR7HG2203E/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+            <a class="video__play" href="https://www.youtube.com/watch?v=1eR7HG2203E" target="_blank" rel="noopener" aria-label="Play video: Porcelanosa Experience">
+              <span><svg viewBox="0 0 14 16" fill="currentColor" aria-hidden="true"><path d="M0 0l14 8-14 8z"/></svg></span>
+              <em>Porcelanosa Experience</em>
+            </a>
+          </div>
+          <p class="post__links">
+            <a class="link" href="https://www.porcelanosa.com/en/about-us/" target="_blank" rel="noopener">About Porcelanosa <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="open-concept-open-house" data-category="Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-12-20">20 December 2019</time>
+            <p class="label post__cats">Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Open Concept, Open House</h2>
+          <div class="body">
+            <p>We held an open house at 9026 Groveland last Thursday. It was such a privilege to host friends, neighbors, and prospective clients at Groveland. Getting to visit with everyone and see people enjoying themselves in a home we designed and built was so fantastic. A huge thank you goes to Porcelanosa for sponsoring the event! Everything was perfect.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1535"><img src="assets/images/journal/journal-03.jpg" srcset="assets/images/journal/journal-03-sm.jpg 1000w, assets/images/journal/journal-03.jpg 2000w" sizes="(max-width: 48rem) 100vw, 30vw" width="2000" height="1535" alt="Guests and a live musician in the open living area during the open house" loading="lazy" decoding="async"></div>
+            </figure>
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1637"><img src="assets/images/journal/journal-04.jpg" srcset="assets/images/journal/journal-04-sm.jpg 1000w, assets/images/journal/journal-04.jpg 2000w" sizes="(max-width: 48rem) 100vw, 30vw" width="2000" height="1637" alt="Guests gathered around the kitchen and dining table" loading="lazy" decoding="async"></div>
+            </figure>
+          </div>
+          <div class="body">
+            <p>Part of the design of this house that makes it great for entertaining is the open concept. The open floor plan links the kitchen and living area. Our signature floor-to-ceiling windows and numerous sliding doors take the party outside as well. Together, the kitchen, living room, and yard form an open and inviting space perfect for hosting large gatherings.</p>
+            <p>Traditional closed floor plans break up big gatherings into mini-parties. You end up with one group in the kitchen, one in the living room, another on the patio—everyone gets spread out because each space is too small to host everyone. To gather everyone, it feels like you need to rent out a country club ballroom. An open concept home makes hosting large groups easier. At the open house, the combined kitchen-living area felt like a ballroom. We had a fantastic live musician and plenty of space for people to enjoy him. There was space enough for dancing, too! Serving food and drinks was easy and the kitchen was not cramped.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 1591 / 1582"><img src="assets/images/journal/journal-05.jpg" srcset="assets/images/journal/journal-05-sm.jpg 1000w, assets/images/journal/journal-05.jpg 1591w" sizes="(max-width: 48rem) 100vw, 60vw" width="1591" height="1582" alt="Guests seen through the glass wall at night" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">9026 Groveland was built with openness in mind. That includes openness to the outdoors. Floor-to-ceiling windows and glass sliding doors make it easy for the party to move outside.</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>The exterior wall of the kitchen-living area, as well as the master bedroom, is glass. A signature part of our design, the floor-to-ceiling windows with numerous sliding doors soften the lines between indoors and outdoors. The northeast-facing windows and glass doors provide beautiful natural light for everyday living. They also help add the yard to the party space.</p>
+            <p>To us, openness—to ideas, culture, adventures, and people—is a core part of the modern lifestyle and attitude. That’s why openness is a core part of our design philosophy. We loved sharing the Groveland home with all our friends and neighbors. Very soon, it will be a new home for a Dallas family.</p>
+          </div>
+          <p class="post__links">
+            <a class="link" href="groveland.html">See Groveland <span class="arrow"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="candys-dirt-quality-is-a-family-affair-at-groveland" data-category="Accolades, Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-11-27">27 November 2019</time>
+            <p class="label post__cats">Accolades · Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Candy’s Dirt: Quality is a Family Affair at Groveland</h2>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1500"><img src="assets/images/journal/journal-06.jpg" srcset="assets/images/journal/journal-06-sm.jpg 1000w, assets/images/journal/journal-06.jpg 2000w" sizes="(max-width: 48rem) 100vw, 60vw" width="2000" height="1500" alt="Orange chairs around the fire pit at Groveland" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">The home at Groveland is perfect for a big family, with 4 bedrooms, 3.5 bathrooms, and lots of space to run outside.</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>We want to send a big thank you to Candy’s Dirt for writing about us and our home at Groveland. The Dallas Builders Association recently featured our build at 9026 Groveland as their Home of the Week. Their article and the one in the Dallas Morning News both highlight the great things about the house.</p>
+            <p>We really love what Candy’s Dirt had to say, though. They honed in on a core part of our business: family. We are Modern Design Brothers, after all. The Hamghalam brothers work together, through ups and downs, through thick and thin, to do what they love: build beautiful modern homes for you and your family.</p>
+          </div>
+          <p class="post__links">
+            <a class="link" href="https://candysdirt.com/2019/11/15/dallas-builders-association-member-spotlight-modern-design-brothers/" target="_blank" rel="noopener">Read the article on CandysDirt <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+            <a class="link" href="https://dallasbuilders.com/home-of-the-week-modern-design-brothers/" target="_blank" rel="noopener">Dallas Builders Association <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+            <a class="link" href="https://www.dallasnews.com/sponsored/real-estate/2019/11/17/modern-design-brothers-touts-four-bedroom-design-near-white-rock-lake/" target="_blank" rel="noopener">The Dallas Morning News <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="modern-home-at-groveland-featured-by-dallas-builders-association" data-category="Accolades, Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-11-27">27 November 2019</time>
+            <p class="label post__cats">Accolades · Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Modern Home at Groveland Featured by Dallas Builders Association</h2>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1500"><img src="assets/images/journal/journal-07.jpg" srcset="assets/images/journal/journal-07-sm.jpg 1000w, assets/images/journal/journal-07.jpg 2000w" sizes="(max-width: 48rem) 100vw, 60vw" width="2000" height="1500" alt="Groveland street front on a cloudy day" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">The home at Groveland is the Dallas Builders Association’s Home of the Week!</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>As we put the final touches on the Groveland house, we have some exciting news! The Dallas Builders Association selected Groveland as their Home of the Week, and we couldn’t be prouder! It’s so gratifying to put the finishing touches on a passion project like this. As the DBA says, we worked tirelessly to bring the work of our architect to fruition. They honed in on the core features of our design, including simplicity, functionality, and natural light. This part especially captured what we love about 9026 Groveland:</p>
+          </div>
+          <figure>
+            <blockquote class="post__quote">“A 13-foot wall along the patio with tall sliding doors, seamless transoms, no visible headers and an 8-foot overhang with a Douglas fir finish erase the division between indoors and outdoors.”</blockquote>
+            <figcaption class="caption">— Dallas Builders Association</figcaption>
+          </figure>
+          <p class="post__links">
+            <a class="link" href="https://dallasbuilders.com/home-of-the-week-modern-design-brothers/" target="_blank" rel="noopener">Dallas Builders Association <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+            <a class="link" href="https://www.dallasnews.com/sponsored/real-estate/2019/11/17/modern-design-brothers-touts-four-bedroom-design-near-white-rock-lake/" target="_blank" rel="noopener">The Dallas Morning News <span class="arrow" style="transform: rotate(-45deg)"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="virtual-tour-of-9026-groveland" data-category="Building, Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-07-31">31 July 2019</time>
+            <p class="label post__cats">Building · Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Virtual Tour of 9026 Groveland</h2>
+          <div class="body">
+            <p>Check out this video tour of the modern home we are building at 9026 Groveland in east Dallas!</p>
+          </div>
+          <div class="video" data-youtube="jlRkhlF-Z48" data-title="9026 Groveland">
+            <img src="assets/images/groveland/groveland-01.jpg" srcset="assets/images/groveland/groveland-01-sm.jpg 1000w, assets/images/groveland/groveland-01.jpg 2400w" sizes="(max-width: 48rem) 100vw, 60vw" width="2400" height="1696" alt="" loading="lazy" decoding="async">
+            <a class="video__play" href="https://www.youtube.com/watch?v=jlRkhlF-Z48" target="_blank" rel="noopener" aria-label="Play video: 9026 Groveland">
+              <span><svg viewBox="0 0 14 16" fill="currentColor" aria-hidden="true"><path d="M0 0l14 8-14 8z"/></svg></span>
+              <em>9026 Groveland</em>
+            </a>
+          </div>
+          </div>
+        </article>
+        <article class="grid post" id="master-bedroom-bath-and-closet-at-groveland" data-category="Building, Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-07-31">31 July 2019</time>
+            <p class="label post__cats">Building · Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Master Bedroom, Bath, and Closet at Groveland</h2>
+          <p class="post__lead">Hallways do not spark joy.</p>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 1600 / 2133"><img src="assets/images/journal/journal-08.jpg" srcset="assets/images/journal/journal-08-sm.jpg 1000w, assets/images/journal/journal-08.jpg 1600w" sizes="(max-width: 48rem) 100vw, 30vw" width="1600" height="2133" alt="Primary bedroom under construction with clerestory windows" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">The master bedroom is spacious, with a high ceiling and lots of natural light.</figcaption>
+            </figure>
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1500"><img src="assets/images/journal/journal-09.jpg" srcset="assets/images/journal/journal-09-sm.jpg 1000w, assets/images/journal/journal-09.jpg 2000w" sizes="(max-width: 48rem) 100vw, 30vw" width="2000" height="1500" alt="Primary bedroom under construction with a sliding door to the yard" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">The yard is only a step away from the master bedroom. Just open up the sliding door.</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>The 9026 Groveland house is coming along beautifully. We particularly love the way the master bedroom is turning out. The windows brighten the room up, and the Douglas fir beams add a warm color. The high slanted ceiling makes it spacious and airy, and a sliding glass door gives easy access to some fresh air in the yard.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1500"><img src="assets/images/journal/journal-10.jpg" srcset="assets/images/journal/journal-10-sm.jpg 1000w, assets/images/journal/journal-10.jpg 2000w" sizes="(max-width: 48rem) 100vw, 60vw" width="2000" height="1500" alt="Primary bathroom under construction" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">The master bath is progressing nicely at Groveland. You can see the closet in the background.</figcaption>
+            </figure>
+          </div>
+          <div class="body">
+            <p>To maximize living space, we opted to put the master closet off the master bath. With this layout, you can find everything you need to get ready for your day (or get ready for bed) right in one place. To get your clothes, just go through the master bath. No space is wasted on a hallway, and no time is wasted walking between the shower and bathroom.</p>
+            <p>This modern efficiency is just one way we build our homes for your lifestyle.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 1920 / 1080"><img src="assets/images/journal/journal-11.jpg" srcset="assets/images/journal/journal-11-sm.jpg 1000w, assets/images/journal/journal-11.jpg 1920w" sizes="(max-width: 48rem) 100vw, 30vw" width="1920" height="1080" alt="Rendering of the primary bathroom toward the bedroom" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">A rendering of the master bath with a view of the bedroom.</figcaption>
+            </figure>
+            <figure>
+              <div class="media" style="aspect-ratio: 1920 / 1080"><img src="assets/images/journal/journal-12.jpg" srcset="assets/images/journal/journal-12-sm.jpg 1000w, assets/images/journal/journal-12.jpg 1920w" sizes="(max-width: 48rem) 100vw, 30vw" width="1920" height="1080" alt="Rendering of the primary bathroom toward the closet" loading="lazy" decoding="async"></div>
+              <figcaption class="caption">A rendering of the master bath with a view of the closet.</figcaption>
+            </figure>
+          </div>
+          <p class="post__links">
+            <a class="link" href="groveland.html">See Groveland <span class="arrow"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="modern-design-in-east-dallas-8802-daytonia" data-category="Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-07-14">14 July 2019</time>
+            <p class="label post__cats">Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Modern Design in East Dallas | 8802 Daytonia</h2>
+          <div class="video" data-youtube="tEEYgft02Oo" data-title="8802 Daytonia, East Dallas">
+            <img src="assets/images/daytonia/daytonia-19.jpg" srcset="assets/images/daytonia/daytonia-19-sm.jpg 1000w, assets/images/daytonia/daytonia-19.jpg 2034w" sizes="(max-width: 48rem) 100vw, 60vw" width="2034" height="1356" alt="" loading="lazy" decoding="async">
+            <a class="video__play" href="https://www.youtube.com/watch?v=tEEYgft02Oo" target="_blank" rel="noopener" aria-label="Play video: 8802 Daytonia, East Dallas">
+              <span><svg viewBox="0 0 14 16" fill="currentColor" aria-hidden="true"><path d="M0 0l14 8-14 8z"/></svg></span>
+              <em>8802 Daytonia, East Dallas</em>
+            </a>
+          </div>
+          <p class="post__links">
+            <a class="link" href="daytonia.html">See Daytonia <span class="arrow"></span></a>
+          </p>
+          </div>
+        </article>
+        <article class="grid post" id="our-waterfall-gutter-in-action" data-category="Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-07-14">14 July 2019</time>
+            <p class="label post__cats">Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Our Waterfall Gutter in Action!</h2>
+          <div class="video" data-youtube="Zmb5ssvc13s" data-title="Waterfall gutter">
+            <img src="https://i.ytimg.com/vi/Zmb5ssvc13s/maxresdefault.jpg" alt="" loading="lazy" decoding="async">
+            <a class="video__play" href="https://www.youtube.com/watch?v=Zmb5ssvc13s" target="_blank" rel="noopener" aria-label="Play video: Waterfall gutter">
+              <span><svg viewBox="0 0 14 16" fill="currentColor" aria-hidden="true"><path d="M0 0l14 8-14 8z"/></svg></span>
+              <em>Waterfall gutter</em>
+            </a>
+          </div>
+          </div>
+        </article>
+        <article class="grid post" id="getting-dirty-on-the-jobsite" data-category="Building" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-07-14">14 July 2019</time>
+            <p class="label post__cats">Building</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">Getting Dirty on the Jobsite</h2>
+          <div class="body">
+            <p>We recently met with our realtor, Jacob Moss of Modtown Realty, at Groveland. He and Amir are shown here examining the plumbing and ductwork. We like to spend a lot of time at our builds—not only to keep an eye on things, but also to get dirty and do some work ourselves. Taking a hands-on approach is a core part of our philosophy.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 960 / 640"><img src="assets/images/journal/journal-13.jpg" width="960" height="640" alt="Amir and realtor Jacob Moss examining plumbing and ductwork at Groveland" loading="lazy" decoding="async"></div>
+            </figure>
+          </div>
+          </div>
+        </article>
+        <article class="grid post" id="a-modern-living-space-at-9026-groveland" data-category="Design" data-reveal>
+          <div class="post__meta">
+            <time class="label" datetime="2019-07-14">14 July 2019</time>
+            <p class="label post__cats">Design</p>
+          </div>
+          <div class="post__body">
+          <h2 class="heading post__title">A Modern Living Space at 9026 Groveland</h2>
+          <div class="body">
+            <p>The house at 9026 Groveland is coming along nicely. We are really excited about the kitchen and den area, shown in this beautiful rendering. An open floor plan, clean lines, and floor-to-ceiling windows make the space feel bright and inviting. Our modern world is so chaotic and busy, so a modern home should be simple and uncluttered.</p>
+          </div>
+          <div class="post__media">
+            <figure>
+              <div class="media" style="aspect-ratio: 2000 / 1125"><img src="assets/images/journal/journal-14.jpg" srcset="assets/images/journal/journal-14-sm.jpg 1000w, assets/images/journal/journal-14.jpg 2000w" sizes="(max-width: 48rem) 100vw, 60vw" width="2000" height="1125" alt="Rendering of the kitchen and den at 9026 Groveland" loading="lazy" decoding="async"></div>
+            </figure>
+          </div>
+          <p class="post__links">
+            <a class="link" href="groveland.html">See Groveland <span class="arrow"></span></a>
+          </p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer__mark" href="index.html">Modern Design Studio</a>
+      <div class="footer__cols">
+        <div>
+          <h2 class="label">Studio</h2>
+          <address data-site="address" data-slot="title" data-lines="2"></address>
+        </div>
+        <div>
+          <h2 class="label">Contact</h2>
+          <ul>
+            <li><a data-site="email" data-slot="title"></a></li>
+            <li><a data-site="phone" data-slot="short"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label">Follow</h2>
+          <ul data-site="social" data-slot="short" data-lines="2"></ul>
+        </div>
+        <div>
+          <h2 class="label">Menu</h2>
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <p>&copy; <span data-year>2026</span> Modern Design Studio</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

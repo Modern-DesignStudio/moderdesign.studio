@@ -238,12 +238,18 @@
      Filters are built automatically from each card's data-category value.
      ----------------------------------------------------------------------- */
 
-  const projects = $("[data-projects]");
+  const projects = $("[data-projects], [data-filterable]");
 
   if (projects) {
-    const cards = $$(".card", projects);
+    // Items carry data-category; several categories may be listed, separated by commas.
+    const cards = $$("[data-category]", projects);
     const filter = $("[data-filter]");
     const viewButtons = $$("[data-view-btn]");
+    const catsOf = (card) =>
+      (card.dataset.category || "")
+        .split(",")
+        .map((c) => c.trim())
+        .filter(Boolean);
 
     const transition = (fn) => {
       if (document.startViewTransition && !reduceMotion) document.startViewTransition(fn);
@@ -252,8 +258,9 @@
 
     const categories = [];
     cards.forEach((card) => {
-      const c = (card.dataset.category || "").trim();
-      if (c && !categories.includes(c)) categories.push(c);
+      catsOf(card).forEach((c) => {
+        if (!categories.includes(c)) categories.push(c);
+      });
     });
 
     if (filter && categories.length) {
@@ -275,7 +282,7 @@
         transition(() => {
           $$(".chip", filter).forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
           cards.forEach((card) => {
-            card.hidden = Boolean(value) && (card.dataset.category || "").trim() !== value;
+            card.hidden = Boolean(value) && !catsOf(card).includes(value);
             card.classList.add("is-in");
           });
         });
@@ -302,14 +309,39 @@
       })
     );
 
-    let saved = null;
-    try {
-      saved = sessionStorage.getItem("mds-view");
-    } catch (err) {
-      saved = null;
+    if (viewButtons.length) {
+      let saved = null;
+      try {
+        saved = sessionStorage.getItem("mds-view");
+      } catch (err) {
+        saved = null;
+      }
+      setView(saved === "list" ? "list" : "grid");
     }
-    setView(saved === "list" ? "list" : "grid");
   }
+
+  /* ---- Videos ------------------------------------------------------------
+     <div class="video" data-youtube="VIDEO_ID" data-title="…">
+       <img …> <a class="video__play" href="https://www.youtube.com/watch?v=VIDEO_ID">…</a>
+     </div>
+     Nothing loads from YouTube until the visitor presses play. Without
+     JavaScript the button simply opens the video on YouTube.
+     ----------------------------------------------------------------------- */
+
+  $$("[data-youtube]").forEach((box) => {
+    const play = $(".video__play", box);
+    if (!play) return;
+    play.addEventListener("click", (e) => {
+      e.preventDefault();
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(box.dataset.youtube)}?autoplay=1&rel=0`;
+      iframe.title = box.dataset.title || "Video";
+      iframe.allow = "autoplay; encrypted-media; fullscreen; picture-in-picture";
+      iframe.allowFullscreen = true;
+      box.replaceChildren(iframe);
+      iframe.focus();
+    });
+  });
 
   /* ---- Contact form ------------------------------------------------------
      The form needs somewhere to send to. Until its action="" is set to a real

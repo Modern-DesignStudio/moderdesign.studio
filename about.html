@@ -16,7 +16,7 @@
 
 <!--
   ABOUT
-  Statement, a wide photo, the story, then the people.
+  Statement, a wide photo, the story, philosophy, the people, then trades & suppliers.
   People: one <article class="person"> each — portrait, name, role, short bio.
 -->
 
@@ -27,10 +27,11 @@
     <nav class="site-nav" aria-label="Primary">
       <a href="work.html">Work</a>
       <a href="about.html" aria-current="page">About</a>
+      <a href="process.html">Process</a>
     </nav>
     <a class="wordmark" href="index.html">Modern Design Studio</a>
     <nav class="site-nav site-nav--end" aria-label="Secondary">
-      <a href="process.html">Process</a>
+      <a href="journal.html">Journal</a>
       <a href="contact.html">Contact</a>
     </nav>
     <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">
@@ -44,7 +45,8 @@
       <li><a href="work.html"><span>01</span>Work</a></li>
       <li><a href="about.html" aria-current="page"><span>02</span>About</a></li>
       <li><a href="process.html"><span>03</span>Process</a></li>
-      <li><a href="contact.html"><span>04</span>Contact</a></li>
+      <li><a href="journal.html"><span>04</span>Journal</a></li>
+      <li><a href="contact.html"><span>05</span>Contact</a></li>
     </ul>
     <div class="menu__foot">
       <a data-site="email" data-slot="title"></a>
@@ -75,10 +77,58 @@
       <div class="wrap grid split">
         <h2 class="eyebrow split__label" data-reveal>Story</h2>
         <div class="split__body" data-reveal>
-          <p class="heading" data-slot data-lines="3"></p>
+          <p class="heading" data-slot data-lines="3">Growing up, Adam and Amir loved helping their father build furniture.</p>
           <div class="body">
-            <p data-slot data-lines="5"></p>
+            <p data-slot data-lines="5">Though they trained as industrial engineers and initially worked in finance, they rediscovered their passion for design when they remodeled a lake house in east Texas. In 2015, they started Modern Design Brothers, building custom modern homes in Dallas, TX.</p>
             <p data-slot data-lines="4"></p>
+          </div>
+          <figure class="split__media">
+            <div class="media" style="aspect-ratio: 2400 / 1600"><img src="assets/images/about/about-01.jpg" srcset="assets/images/about/about-01-sm.jpg 1000w, assets/images/about/about-01.jpg 2400w" sizes="(max-width: 48rem) 100vw, 67vw" width="2400" height="1600" alt="Adam and Amir in a Modern Design Brothers home" loading="lazy" decoding="async"></div>
+            <figcaption class="caption">Adam and Amir</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section section--deep" id="philosophy">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="eyebrow">Philosophy</h2>
+        </div>
+        <p class="heading philosophy__intro" data-reveal>To create beautiful, high-quality modern homes, we follow three core principles.</p>
+
+        <div class="trio">
+          <article class="trio__item" data-reveal>
+            <span class="trio__num">01</span>
+            <h3 class="subheading">Hands-on home-building</h3>
+            <div class="body">
+              <p>From design to detailing, we are personally involved in every stage of the building process. Being a small company lets us take a hands-on approach to the homes we build. We meet with our clients, share their vision with our architects, hand-pick our subcontractors, select the best materials, and get dirty doing work on the job site. That’s the best way to get every detail right and make your dream a reality.</p>
+            </div>
+          </article>
+          <article class="trio__item" data-reveal>
+            <span class="trio__num">02</span>
+            <h3 class="subheading">Natural homes</h3>
+            <div class="body">
+              <p>What does “natural” mean in home building? It means materials like stone, tile, and hardwood floors. It means handmade brick. It means solid Douglas fir beams and finish.</p>
+              <p>It also means copious natural light from skylights and floor-to-ceiling windows, blurring the lines between yard and home and bringing the outdoors in.</p>
+              <p>And it means environmental consciousness. For the planet and your budget, all our homes are energy efficient and ENERGY STAR certified.</p>
+            </div>
+          </article>
+          <article class="trio__item" data-reveal>
+            <span class="trio__num">03</span>
+            <h3 class="subheading">Built for your life</h3>
+            <div class="body">
+              <p>Every family is unique. That’s why we specialize in custom homes—your home should fit into your life. Let us work with you to design and build a home that meets your specific needs.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid visit" data-reveal>
+          <h3 class="label visit__label">Visit the job site</h3>
+          <div class="visit__body">
+            <p class="lede">To know how we work, come see for yourself. Take a tour of a job site to see our process and dedication to detail. Give us a call or send us an email to set up a visit.</p>
+            <a class="link" href="contact.html">Contact us <span class="arrow"></span></a>
           </div>
         </div>
       </div>
@@ -86,7 +136,7 @@
 
     <!-- PEOPLE — one <article class="person"> per person. Add or remove articles freely;
          the grid fits any number. -->
-    <section class="section section--flush-top">
+    <section class="section">
       <div class="wrap">
         <div class="section-head">
           <h2 class="eyebrow">People</h2>
@@ -113,6 +163,24 @@
             <p class="label person__role" data-slot="short"></p>
             <p class="person__bio" data-slot data-lines="4"></p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRADES & SUPPLIERS -->
+    <section class="section section--flush-top">
+      <div class="wrap grid split">
+        <h2 class="eyebrow split__label" data-reveal>Trades &amp; Suppliers</h2>
+        <div class="split__body" data-reveal>
+          <p class="lede">When it comes to subcontractors and vendors, we are proud to be picky. Over the years, we have found craftsmen who share our dedication to quality and attention to detail. We watch the work of potential collaborators over time to find people who do great work. Doing business this way produces durable and beautiful homes.</p>
+          <dl class="partners">
+            <div><dt>Ramer Concrete</dt><dd>We rely on Ramer Concrete for solid foundations.</dd></div>
+            <div><dt>Ridge Riders Construction</dt><dd>We use Ridge Riders to frame the homes we build.</dd></div>
+            <div><dt>FIREPLACEandBBQs</dt><dd>1800GasLogs is our go-to supplier for fireplaces.</dd></div>
+            <div><dt>Southwest Door and Window</dt><dd>Our signature sliding glass doors and floor-to-ceiling windows come from Southwest Door and Window.</dd></div>
+            <div><dt>Shower Doors of Dallas</dt><dd>We love bathrooms! Shower Doors of Dallas helps us make them modern and elegant.</dd></div>
+            <div><dt>Skylight Solutions</dt><dd>Natural light is a big part of our builds. Skylight Solutions helps us incorporate sunlight into the homes we create.</dd></div>
+          </dl>
         </div>
       </div>
     </section>
@@ -153,6 +221,7 @@
             <li><a href="work.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="process.html">Process</a></li>
+            <li><a href="journal.html">Journal</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
