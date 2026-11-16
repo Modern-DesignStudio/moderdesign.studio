@@ -64,10 +64,20 @@
     <!-- HERO — full-screen slideshow. One .hero__slide per photo; add or remove slides freely. -->
     <section class="hero" data-hero data-slideshow data-autoplay="6500" aria-label="Featured projects">
 
-      <!-- Each slide is one link: clicking the photo opens that project. -->
+      <!-- Each slide is one link: clicking the photo opens that project. The first slide is the one seen on arrival. -->
       <div class="hero__slide on-dark is-active" data-slide>
+        <a class="hero__link" href="lyre.html" aria-label="View project: Lyre">
+          <figure class="media media--fill media--dark"><img src="assets/images/lyre/lyre-01.jpg" srcset="assets/images/lyre/lyre-01-sm.jpg 1000w, assets/images/lyre/lyre-01.jpg 2016w" sizes="100vw" width="2016" height="1512" alt="Street front with wood siding and brick base among trees" fetchpriority="high" decoding="async"></figure>
+          <div class="hero__caption">
+            <p class="hero__title" data-slot="title">Lyre</p>
+            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="hero__slide on-dark" data-slide>
         <a class="hero__link" href="daytonia.html" aria-label="View project: Daytonia">
-          <figure class="media media--fill media--dark"><img src="assets/images/daytonia/daytonia-01.jpg" srcset="assets/images/daytonia/daytonia-01-sm.jpg 1000w, assets/images/daytonia/daytonia-01.jpg 2034w" sizes="100vw" width="2034" height="1356" alt="Street front at dusk with butterfly roof and lit clerestory windows" fetchpriority="high" decoding="async"></figure>
+          <figure class="media media--fill media--dark"><img src="assets/images/daytonia/daytonia-01.jpg" srcset="assets/images/daytonia/daytonia-01-sm.jpg 1000w, assets/images/daytonia/daytonia-01.jpg 2034w" sizes="100vw" width="2034" height="1356" alt="Street front at dusk with butterfly roof and lit clerestory windows" loading="lazy" decoding="async"></figure>
           <div class="hero__caption">
             <p class="hero__title" data-slot="title">Daytonia</p>
             <p class="hero__meta" data-slot="short">Dallas, Texas</p>
@@ -90,16 +100,6 @@
           <figure class="media media--fill media--dark"><img src="assets/images/san-leandro/san-leandro-01.jpg" srcset="assets/images/san-leandro/san-leandro-01-sm.jpg 1000w, assets/images/san-leandro/san-leandro-01.jpg 2400w" sizes="100vw" width="2400" height="1600" alt="Rear of the house at dusk with glazed living wing and flat roof" loading="lazy" decoding="async"></figure>
           <div class="hero__caption">
             <p class="hero__title" data-slot="title">San Leandro</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="lyre.html" aria-label="View project: Lyre">
-          <figure class="media media--fill media--dark"><img src="assets/images/lyre/lyre-01.jpg" srcset="assets/images/lyre/lyre-01-sm.jpg 1000w, assets/images/lyre/lyre-01.jpg 2016w" sizes="100vw" width="2016" height="1512" alt="Street front with wood siding and brick base among trees" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">Lyre</p>
             <p class="hero__meta" data-slot="short">Dallas, Texas</p>
           </div>
         </a>
