@@ -635,6 +635,25 @@ button:hover > .arrow { width: 2.75rem; }
   pointer-events: none;
 }
 
+/* The whole slide is a link to its project */
+.hero__link {
+  position: absolute;
+  inset: 0;
+  display: block;
+  color: inherit;
+}
+.hero__link:focus-visible { outline-offset: -0.75rem; }
+.hero__link .hero__title {
+  text-decoration: underline 1px transparent;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.4s ease;
+}
+.hero__link:hover .hero__title,
+.hero__link:focus-visible .hero__title { text-decoration-color: currentColor; }
+
+/* Slides wait off-stage, and their photos are not downloaded, until they are about to be shown */
+.js [data-slide]:not(.is-active):not(.is-primed) { display: none; }
+
 .hero__caption {
   position: absolute;
   left: var(--gutter);

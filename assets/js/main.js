@@ -183,12 +183,22 @@
       timer = window.setTimeout(() => show(index + 1), delay);
     };
 
+    // Get a slide ready ahead of time: put it on stage (still invisible) and start its photo downloading.
+    const prime = (i) => {
+      const slide = slides[(i + slides.length) % slides.length];
+      slide.classList.add("is-primed");
+      $$("img[loading='lazy']", slide).forEach((image) => (image.loading = "eager"));
+    };
+
     const show = (n) => {
       index = (n + slides.length) % slides.length;
+      prime(index);
       slides.forEach((slide, i) => {
         slide.classList.toggle("is-active", i === index);
         slide.setAttribute("aria-hidden", String(i !== index));
       });
+      prime(index + 1);
+      prime(index - 1);
       current.forEach((el) => (el.textContent = pad(index + 1)));
       schedule();
     };
