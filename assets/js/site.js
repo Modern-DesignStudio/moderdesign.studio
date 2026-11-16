@@ -10,11 +10,11 @@ window.SITE = {
   // One entry per number; "name" is optional.
   phones: [
     { name: "Adam", number: "(903) 975-0345" },
-    { name: "Amir", number: "(818) 963-2488" }
+    { name: "Carmen Marenco", number: "(903) 975-0344" }
   ],
 
   // One entry per line of the address
-  address: ["8571 Eustis Avenue", "Dallas, Texas 75218"],
+  address: ["8926 San Leandro Drive", "Dallas, Texas 75218"],
 
   hours: "",
 
