@@ -548,8 +548,10 @@ button:hover > .arrow { width: 2.75rem; }
 .media--3x2 { aspect-ratio: 3 / 2; }
 .media--4x3 { aspect-ratio: 4 / 3; }
 .media--1x1 { aspect-ratio: 1 / 1; }
+.media--5x4 { aspect-ratio: 5 / 4; }
 .media--4x5 { aspect-ratio: 4 / 5; }
 .media--3x4 { aspect-ratio: 3 / 4; }
+.media--2x3 { aspect-ratio: 2 / 3; }
 .media--fill { position: absolute; inset: 0; aspect-ratio: auto; }
 .media--dark { background: var(--slot-dark); }
 
@@ -1016,6 +1018,9 @@ button:hover > .arrow { width: 2.75rem; }
 .next:hover .arrow { width: 2.75rem; }
 
 @media (max-width: 48rem) {
+  /* On phones the viewer keeps a landscape frame so wide photos aren't cropped to a sliver */
+  .viewer { height: auto; min-height: 0; }
+  .viewer__stage { aspect-ratio: 4 / 3; }
   .viewer__bar { grid-template-columns: 1fr auto; }
   .viewer__count { display: none; }
   .project-info__head,
