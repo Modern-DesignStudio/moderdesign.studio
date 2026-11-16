@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work — Modern Design Studio</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<!--
+  WORK INDEX
+  One <a class="card"> per project. Copy a card to add a project.
+    href            the project's page
+    data-category   builds the filter buttons automatically (any wording you like)
+    card--wide      add this class to make a card span the full width
+  Card title = project name, card meta = location (or year).
+-->
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="studio.html">Studio</a>
+    </nav>
+    <a class="wordmark" href="index.html">Modern Design Studio</a>
+    <nav class="site-nav site-nav--end" aria-label="Secondary">
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">
+      <span data-menu-label>Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="work.html" aria-current="page"><span>01</span>Work</a></li>
+      <li><a href="studio.html"><span>02</span>Studio</a></li>
+      <li><a href="process.html"><span>03</span>Process</a></li>
+      <li><a href="contact.html"><span>04</span>Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a data-site="email" data-slot="title"></a>
+      <a data-site="phone" data-slot="short"></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap grid">
+        <div class="page-head__title">
+          <p class="eyebrow" data-reveal>Work</p>
+          <h1 class="display" data-slot data-lines="2" data-reveal></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="wrap">
+
+        <div class="toolbar">
+          <div class="chips" data-filter role="group" aria-label="Filter projects"></div>
+          <div class="chips" role="group" aria-label="View">
+            <button class="chip" type="button" data-view-btn="grid" aria-pressed="true">Grid</button>
+            <button class="chip" type="button" data-view-btn="list" aria-pressed="false">Index</button>
+          </div>
+        </div>
+
+        <div class="projects" data-projects data-view="grid">
+
+          <a class="card card--wide" href="project.html" data-category="New Build" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 21:9"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-category="New Build" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-category="Renovation" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-category="Interiors" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-category="New Build" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card card--wide" href="project.html" data-category="Renovation" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 21:9"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-category="Interiors" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-category="New Build" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h2 class="card__title" data-slot="title"></h2>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer__mark" href="index.html">Modern Design Studio</a>
+      <div class="footer__cols">
+        <div>
+          <h2 class="label">Studio</h2>
+          <address data-site="address" data-slot="title" data-lines="2"></address>
+        </div>
+        <div>
+          <h2 class="label">Contact</h2>
+          <ul>
+            <li><a data-site="email" data-slot="title"></a></li>
+            <li><a data-site="phone" data-slot="short"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label">Follow</h2>
+          <ul data-site="social" data-slot="short" data-lines="2"></ul>
+        </div>
+        <div>
+          <h2 class="label">Menu</h2>
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <p>&copy; <span data-year>2026</span> Modern Design Studio</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modern Design Studio</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<!--
+  HOW TO FILL THIS SITE IN
+  Text   — type between the tags of any element marked data-slot, e.g.
+             <h1 class="display" data-slot data-lines="3">Your sentence here</h1>
+           The grey placeholder lines vanish as soon as the element has text.
+  Images — put an <img> inside any <figure class="media …">, e.g.
+             <figure class="media media--16x9"><img src="assets/images/house.jpg" alt="Describe the photo"></figure>
+           Photos are cropped to fill the frame. Shapes: media--21x9, 16x9, 3x2, 4x3, 1x1, 4x5, 3x4.
+  Email, phone, address and social links are set once in assets/js/site.js.
+-->
+
+<body class="has-hero" id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="studio.html">Studio</a>
+    </nav>
+    <a class="wordmark" href="index.html">Modern Design Studio</a>
+    <nav class="site-nav site-nav--end" aria-label="Secondary">
+      <a href="process.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">
+      <span data-menu-label>Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="work.html"><span>01</span>Work</a></li>
+      <li><a href="studio.html"><span>02</span>Studio</a></li>
+      <li><a href="process.html"><span>03</span>Process</a></li>
+      <li><a href="contact.html"><span>04</span>Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a data-site="email" data-slot="title"></a>
+      <a data-site="phone" data-slot="short"></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO — full-screen slideshow. One .hero__slide per photo; add or remove slides freely. -->
+    <section class="hero" data-hero data-slideshow data-autoplay="6500" aria-label="Featured projects">
+
+      <div class="hero__slide on-dark is-active" data-slide>
+        <figure class="media media--fill media--dark" data-label="Hero image 01"></figure>
+        <div class="hero__caption">
+          <p class="hero__title" data-slot="title"></p>
+          <p class="hero__meta" data-slot="short"></p>
+        </div>
+      </div>
+
+      <div class="hero__slide on-dark" data-slide>
+        <figure class="media media--fill media--dark" data-label="Hero image 02"></figure>
+        <div class="hero__caption">
+          <p class="hero__title" data-slot="title"></p>
+          <p class="hero__meta" data-slot="short"></p>
+        </div>
+      </div>
+
+      <div class="hero__slide on-dark" data-slide>
+        <figure class="media media--fill media--dark" data-label="Hero image 03"></figure>
+        <div class="hero__caption">
+          <p class="hero__title" data-slot="title"></p>
+          <p class="hero__meta" data-slot="short"></p>
+        </div>
+      </div>
+
+      <div class="hero__controls">
+        <button type="button" data-slide-prev aria-label="Previous image">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M13 7H1M6 2 1 7l5 5"/></svg>
+        </button>
+        <span class="hero__count">
+          <span data-slide-current>01</span>
+          <span class="hero__progress"><i data-slide-progress></i></span>
+          <span data-slide-total>03</span>
+        </span>
+        <button type="button" data-slide-next aria-label="Next image">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION — the studio's statement -->
+    <section class="section">
+      <div class="wrap grid">
+        <p class="eyebrow intro__eyebrow" data-reveal>Studio</p>
+        <h1 class="display intro__statement" data-slot data-lines="3" data-reveal></h1>
+        <div class="intro__body" data-reveal>
+          <p class="lede" data-slot data-lines="4"></p>
+          <a class="link" href="studio.html">About the studio <span class="arrow"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK — four featured projects -->
+    <section class="section section--flush-top">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="eyebrow">Selected Work</h2>
+          <a class="link" href="work.html">All projects <span class="arrow"></span></a>
+        </div>
+
+        <div class="features">
+          <a class="card" href="project.html" data-reveal>
+            <figure class="media media--16x9" data-label="Project image — 16:9"></figure>
+            <div class="card__caption">
+              <h3 class="card__title" data-slot="title"></h3>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-reveal>
+            <figure class="media media--4x5" data-label="Project image — 4:5"></figure>
+            <div class="card__caption">
+              <h3 class="card__title" data-slot="title"></h3>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-reveal>
+            <figure class="media media--3x2" data-label="Project image — 3:2"></figure>
+            <div class="card__caption">
+              <h3 class="card__title" data-slot="title"></h3>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+
+          <a class="card" href="project.html" data-reveal>
+            <figure class="media media--16x9" data-label="Project image — 16:9"></figure>
+            <div class="card__caption">
+              <h3 class="card__title" data-slot="title"></h3>
+              <p class="card__meta" data-slot="short"></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-WIDTH IMAGE -->
+    <section class="band" data-reveal>
+      <figure class="media" data-label="Full-width image — 21:9"></figure>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="section quote center">
+      <figure class="wrap" data-reveal>
+        <blockquote data-slot data-lines="3"></blockquote>
+        <figcaption><span class="label" data-slot="short"></span></figcaption>
+      </figure>
+    </section>
+
+    <!-- PROCESS — three short points -->
+    <section class="section section--deep">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="eyebrow">Process</h2>
+          <a class="link" href="process.html">Our process <span class="arrow"></span></a>
+        </div>
+
+        <div class="trio">
+          <article class="trio__item" data-reveal>
+            <span class="trio__num">01</span>
+            <h3 class="subheading" data-slot="title"></h3>
+            <p class="body" data-slot data-lines="4"></p>
+          </article>
+          <article class="trio__item" data-reveal>
+            <span class="trio__num">02</span>
+            <h3 class="subheading" data-slot="title"></h3>
+            <p class="body" data-slot data-lines="4"></p>
+          </article>
+          <article class="trio__item" data-reveal>
+            <span class="trio__num">03</span>
+            <h3 class="subheading" data-slot="title"></h3>
+            <p class="body" data-slot data-lines="4"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section cta center">
+      <div class="wrap" data-reveal>
+        <p class="eyebrow">Contact</p>
+        <h2 class="display" data-slot data-lines="2"></h2>
+        <a class="btn" href="contact.html">Get in touch <span class="arrow"></span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer__mark" href="index.html">Modern Design Studio</a>
+      <div class="footer__cols">
+        <div>
+          <h2 class="label">Studio</h2>
+          <address data-site="address" data-slot="title" data-lines="2"></address>
+        </div>
+        <div>
+          <h2 class="label">Contact</h2>
+          <ul>
+            <li><a data-site="email" data-slot="title"></a></li>
+            <li><a data-site="phone" data-slot="short"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label">Follow</h2>
+          <ul data-site="social" data-slot="short" data-lines="2"></ul>
+        </div>
+        <div>
+          <h2 class="label">Menu</h2>
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <p>&copy; <span data-year>2026</span> Modern Design Studio</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Process — Modern Design Studio</title>
+  <meta name="description" content="">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<!--
+  PROCESS
+  One <article class="grid step"> per phase — heading, description, photo.
+  The numbers (01, 02, …) are added automatically; copy or delete steps freely.
+-->
+
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="studio.html">Studio</a>
+    </nav>
+    <a class="wordmark" href="index.html">Modern Design Studio</a>
+    <nav class="site-nav site-nav--end" aria-label="Secondary">
+      <a href="process.html" aria-current="page">Process</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu">
+      <span data-menu-label>Menu</span>
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" data-menu aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="work.html"><span>01</span>Work</a></li>
+      <li><a href="studio.html"><span>02</span>Studio</a></li>
+      <li><a href="process.html" aria-current="page"><span>03</span>Process</a></li>
+      <li><a href="contact.html"><span>04</span>Contact</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a data-site="email" data-slot="title"></a>
+      <a data-site="phone" data-slot="short"></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap grid">
+        <div class="page-head__title">
+          <p class="eyebrow" data-reveal>Process</p>
+          <h1 class="display" data-slot data-lines="3" data-reveal></h1>
+        </div>
+        <p class="lede page-head__lede" data-slot data-lines="4" data-reveal></p>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="wrap steps">
+
+        <article class="grid step" data-reveal>
+          <span class="step__num" aria-hidden="true"></span>
+          <div class="step__text">
+            <h2 class="heading" data-slot="title"></h2>
+            <div class="body">
+              <p data-slot data-lines="5"></p>
+            </div>
+          </div>
+          <figure class="media media--4x5 step__media" data-label="Image — 4:5"></figure>
+        </article>
+
+        <article class="grid step" data-reveal>
+          <span class="step__num" aria-hidden="true"></span>
+          <div class="step__text">
+            <h2 class="heading" data-slot="title"></h2>
+            <div class="body">
+              <p data-slot data-lines="5"></p>
+            </div>
+          </div>
+          <figure class="media media--4x5 step__media" data-label="Image — 4:5"></figure>
+        </article>
+
+        <article class="grid step" data-reveal>
+          <span class="step__num" aria-hidden="true"></span>
+          <div class="step__text">
+            <h2 class="heading" data-slot="title"></h2>
+            <div class="body">
+              <p data-slot data-lines="5"></p>
+            </div>
+          </div>
+          <figure class="media media--4x5 step__media" data-label="Image — 4:5"></figure>
+        </article>
+
+        <article class="grid step" data-reveal>
+          <span class="step__num" aria-hidden="true"></span>
+          <div class="step__text">
+            <h2 class="heading" data-slot="title"></h2>
+            <div class="body">
+              <p data-slot data-lines="5"></p>
+            </div>
+          </div>
+          <figure class="media media--4x5 step__media" data-label="Image — 4:5"></figure>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section cta center rule">
+      <div class="wrap" data-reveal>
+        <p class="eyebrow">Contact</p>
+        <h2 class="display" data-slot data-lines="2"></h2>
+        <a class="btn" href="contact.html">Get in touch <span class="arrow"></span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer__mark" href="index.html">Modern Design Studio</a>
+      <div class="footer__cols">
+        <div>
+          <h2 class="label">Studio</h2>
+          <address data-site="address" data-slot="title" data-lines="2"></address>
+        </div>
+        <div>
+          <h2 class="label">Contact</h2>
+          <ul>
+            <li><a data-site="email" data-slot="title"></a></li>
+            <li><a data-site="phone" data-slot="short"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label">Follow</h2>
+          <ul data-site="social" data-slot="short" data-lines="2"></ul>
+        </div>
+        <div>
+          <h2 class="label">Menu</h2>
+          <ul>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__base">
+        <p>&copy; <span data-year>2026</span> Modern Design Studio</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
