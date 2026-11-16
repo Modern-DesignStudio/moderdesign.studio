@@ -5,14 +5,21 @@
    ========================================================================== */
 
 window.SITE = {
-  email: "",
-  phone: "",
+  email: "info@moderndesignbrothers.com",
 
-  // One entry per line of the address, e.g. ["Street", "City, State ZIP"]
-  address: [],
+  // One entry per number; "name" is optional.
+  phones: [
+    { name: "Adam", number: "(903) 975-0345" },
+    { name: "Amir", number: "(818) 963-2488" }
+  ],
+
+  // One entry per line of the address
+  address: ["8571 Eustis Avenue", "Dallas, Texas 75218"],
 
   hours: "",
 
   // e.g. { label: "Instagram", url: "https://instagram.com/..." }
-  social: []
+  social: [
+    { label: "Facebook", url: "https://www.facebook.com/moderndesignbrothers" }
+  ]
 };

@@ -1406,6 +1406,20 @@ button:hover > .arrow { width: 2.75rem; }
   .partners > div { grid-template-columns: minmax(0, 1fr); gap: 0.35rem; }
 }
 
+/* Phone numbers (filled in from assets/js/site.js) */
+.phones { display: grid; gap: 0.2rem; }
+.phones > a { width: fit-content; }
+.tel__name {
+  display: inline-block;
+  min-width: 3.25em;
+  margin-right: 0.35em;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
 /* 404 */
 .lost {
   display: grid;

@@ -20,9 +20,22 @@
       if (el.tagName === "A") el.href = "mailto:" + site.email;
     },
     phone(el) {
-      if (!site.phone) return;
-      el.textContent = site.phone;
-      if (el.tagName === "A") el.href = "tel:" + site.phone.replace(/[^\d+]/g, "");
+      const list = (site.phones || (site.phone ? [{ number: site.phone }] : [])).filter((p) => p && p.number);
+      if (!list.length) return;
+      el.textContent = "";
+      list.forEach(({ name, number }) => {
+        const digits = number.replace(/\D/g, "");
+        const a = document.createElement("a");
+        a.href = "tel:" + (digits.length === 10 ? "+1" + digits : "+" + digits);
+        if (name) {
+          const label = document.createElement("span");
+          label.className = "tel__name";
+          label.textContent = name;
+          a.append(label, " ");
+        }
+        a.append(number);
+        el.append(a);
+      });
     },
     address(el) {
       const lines = (site.address || []).filter(Boolean);
