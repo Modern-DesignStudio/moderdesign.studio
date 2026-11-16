@@ -13,7 +13,7 @@
    10. Sections (home)
    11. Project cards + work index
    12. Project page
-   13. Studio / people
+   13. About / people
    14. Process
    15. Contact
    16. Footer
@@ -1053,41 +1053,47 @@ button:hover > .arrow { width: 2.75rem; }
   .next__media { margin-top: 2.5rem; }
 }
 
-/* 13. Studio / people ------------------------------------------------------ */
+/* 13. About / people ------------------------------------------------------- */
 
 .split { align-items: start; row-gap: 2.5rem; }
 .split__label { grid-column: 1 / span 3; }
 .split__body { grid-column: 5 / span 7; }
 .split__body .heading { margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
 
-.profile { align-items: center; row-gap: 2.5rem; }
-.profile__media { grid-column: 1 / span 5; }
-.profile__text { grid-column: 7 / span 5; }
-.profile__text .eyebrow { margin-bottom: 1.25rem; }
-.profile__role { margin-top: 0.75rem; margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
-
+/* Team grid: fixed column widths, so it looks the same with one person or ten */
 .people {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: var(--gap);
-  row-gap: clamp(2.25rem, 4vw, 3.75rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(1.25rem, 3vw, 3rem);
+  row-gap: clamp(3rem, 5vw, 4.5rem);
 }
-.person .media > img { transition: transform 1.4s var(--ease), filter 0.6s ease; }
+.person .media > img { transition: transform 1.4s var(--ease); }
 .person:hover .media > img { transform: scale(1.03); }
-.person__name { margin-top: 0.95rem; font-size: 1rem; font-weight: 500; line-height: 1.4; }
-.person__cred,
-.person__role { font-size: 0.8125rem; line-height: 1.5; color: var(--ink-2); }
-.person__cred { margin-top: 0.15rem; }
+.person__name {
+  margin-top: 1.25rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  line-height: 1.2;
+}
+.person__role { margin-top: 0.6rem; }
+.person__bio {
+  margin-top: 1.1rem;
+  max-width: 42ch;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
 
-@media (max-width: 64rem) {
-  .people { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 56rem) {
+  .people { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 48rem) {
   .split__label,
-  .split__body,
-  .profile__media,
-  .profile__text { grid-column: 1 / -1; }
-  .people { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .split__body { grid-column: 1 / -1; }
+}
+@media (max-width: 36rem) {
+  .people { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* 14. Process -------------------------------------------------------------- */
@@ -1268,12 +1274,11 @@ button:hover > .arrow { width: 2.75rem; }
 }
 .js [data-reveal].is-in { opacity: 1; transform: none; }
 
-.people > :nth-child(4n + 2),
+.people > :nth-child(3n + 2),
 .trio > :nth-child(3n + 2),
 .projects > :nth-child(2n) { --d: 0.08s; }
-.people > :nth-child(4n + 3),
+.people > :nth-child(3n + 3),
 .trio > :nth-child(3n + 3) { --d: 0.16s; }
-.people > :nth-child(4n + 4) { --d: 0.24s; }
 
 /* Soft cross-fade between pages in browsers that support it */
 @view-transition { navigation: auto; }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Studio — Modern Design Studio</title>
+  <title>About — Modern Design Studio</title>
   <meta name="description" content="">
   <meta name="theme-color" content="#f6f2ea">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -15,10 +15,9 @@
 </head>
 
 <!--
-  STUDIO
-  Statement, a wide photo, an About section, a featured profile, then the people grid.
-  People: one <article class="person"> each — portrait, name, credentials, role.
-  Copy or delete articles to match the team; remove the whole section if not needed.
+  ABOUT
+  Statement, a wide photo, the story, then the people.
+  People: one <article class="person"> each — portrait, name, role, short bio.
 -->
 
 <body id="top">
@@ -27,7 +26,7 @@
   <header class="site-header" data-header>
     <nav class="site-nav" aria-label="Primary">
       <a href="work.html">Work</a>
-      <a href="studio.html" aria-current="page">Studio</a>
+      <a href="about.html" aria-current="page">About</a>
     </nav>
     <a class="wordmark" href="index.html">Modern Design Studio</a>
     <nav class="site-nav site-nav--end" aria-label="Secondary">
@@ -43,7 +42,7 @@
   <div class="menu" id="menu" data-menu aria-hidden="true">
     <ul class="menu__list">
       <li><a href="work.html"><span>01</span>Work</a></li>
-      <li><a href="studio.html" aria-current="page"><span>02</span>Studio</a></li>
+      <li><a href="about.html" aria-current="page"><span>02</span>About</a></li>
       <li><a href="process.html"><span>03</span>Process</a></li>
       <li><a href="contact.html"><span>04</span>Contact</a></li>
     </ul>
@@ -59,7 +58,7 @@
     <section class="page-head">
       <div class="wrap grid">
         <div class="page-head__title">
-          <p class="eyebrow" data-reveal>Studio</p>
+          <p class="eyebrow" data-reveal>About</p>
           <h1 class="display" data-slot data-lines="4" data-reveal></h1>
         </div>
         <p class="lede page-head__lede" data-slot data-lines="4" data-reveal></p>
@@ -68,13 +67,13 @@
 
     <!-- WIDE IMAGE -->
     <section class="band" data-reveal>
-      <figure class="media" data-label="Studio image — 21:9"></figure>
+      <figure class="media" data-label="Wide image — 21:9"></figure>
     </section>
 
-    <!-- ABOUT -->
+    <!-- STORY -->
     <section class="section">
       <div class="wrap grid split">
-        <h2 class="eyebrow split__label" data-reveal>About</h2>
+        <h2 class="eyebrow split__label" data-reveal>Story</h2>
         <div class="split__body" data-reveal>
           <p class="heading" data-slot data-lines="3"></p>
           <div class="body">
@@ -85,22 +84,8 @@
       </div>
     </section>
 
-    <!-- FEATURED PROFILE — portrait, name, role, biography -->
-    <section class="section section--flush-top">
-      <div class="wrap grid profile">
-        <figure class="media media--4x5 profile__media" data-label="Portrait — 4:5" data-reveal></figure>
-        <div class="profile__text" data-reveal>
-          <h2 class="heading" data-slot="title"></h2>
-          <p class="label profile__role" data-slot="short"></p>
-          <div class="body">
-            <p data-slot data-lines="6"></p>
-            <p data-slot data-lines="4"></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PEOPLE -->
+    <!-- PEOPLE — one <article class="person"> per person. Add or remove articles freely;
+         the grid fits any number. -->
     <section class="section section--flush-top">
       <div class="wrap">
         <div class="section-head">
@@ -109,52 +94,24 @@
 
         <div class="people">
           <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
+            <figure class="media media--4x5" data-label="Portrait — 4:5"></figure>
             <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
+            <p class="label person__role" data-slot="short"></p>
+            <p class="person__bio" data-slot data-lines="4"></p>
           </article>
+
           <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
+            <figure class="media media--4x5" data-label="Portrait — 4:5"></figure>
             <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
+            <p class="label person__role" data-slot="short"></p>
+            <p class="person__bio" data-slot data-lines="4"></p>
           </article>
+
           <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
+            <figure class="media media--4x5" data-label="Portrait — 4:5"></figure>
             <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
-          </article>
-          <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
-            <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
-          </article>
-          <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
-            <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
-          </article>
-          <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
-            <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
-          </article>
-          <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
-            <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
-          </article>
-          <article class="person" data-reveal>
-            <figure class="media media--4x5" data-label="Portrait"></figure>
-            <h3 class="person__name" data-slot="short"></h3>
-            <p class="person__cred" data-slot="tiny"></p>
-            <p class="person__role" data-slot="short"></p>
+            <p class="label person__role" data-slot="short"></p>
+            <p class="person__bio" data-slot data-lines="4"></p>
           </article>
         </div>
       </div>
@@ -194,7 +151,7 @@
           <h2 class="label">Menu</h2>
           <ul>
             <li><a href="work.html">Work</a></li>
-            <li><a href="studio.html">Studio</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="process.html">Process</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
