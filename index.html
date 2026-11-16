@@ -61,11 +61,10 @@
 
   <main id="main">
 
-    <!-- HERO — full-screen slideshow. One .hero__slide per photo; add or remove slides freely. -->
-    <section class="hero" data-hero data-slideshow data-autoplay="6500" aria-label="Featured projects">
+    <!-- HERO — one full-screen photo (the Lyre street front). Clicking it opens the Lyre project. -->
+    <section class="hero" data-hero aria-label="Featured project">
 
-      <!-- Each slide is one link: clicking the photo opens that project. The first slide is the one seen on arrival. -->
-      <div class="hero__slide on-dark is-active" data-slide>
+      <div class="hero__slide on-dark is-active">
         <a class="hero__link" href="lyre.html" aria-label="View project: Lyre">
           <figure class="media media--fill media--dark"><img src="assets/images/lyre/lyre-01.jpg" srcset="assets/images/lyre/lyre-01-sm.jpg 1000w, assets/images/lyre/lyre-01.jpg 2016w" sizes="100vw" width="2016" height="1512" alt="Street front with wood siding and brick base among trees" fetchpriority="high" decoding="async"></figure>
           <div class="hero__caption">
@@ -73,80 +72,6 @@
             <p class="hero__meta" data-slot="short">Dallas, Texas</p>
           </div>
         </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="daytonia.html" aria-label="View project: Daytonia">
-          <figure class="media media--fill media--dark"><img src="assets/images/daytonia/daytonia-01.jpg" srcset="assets/images/daytonia/daytonia-01-sm.jpg 1000w, assets/images/daytonia/daytonia-01.jpg 2034w" sizes="100vw" width="2034" height="1356" alt="Street front at dusk with butterfly roof and lit clerestory windows" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">Daytonia</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="groveland.html" aria-label="View project: Groveland">
-          <figure class="media media--fill media--dark"><img src="assets/images/groveland/groveland-01.jpg" srcset="assets/images/groveland/groveland-01-sm.jpg 1000w, assets/images/groveland/groveland-01.jpg 2400w" sizes="100vw" width="2400" height="1696" alt="Rear of the house at dusk with glass walls glowing under a wood soffit" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">Groveland</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="san-leandro.html" aria-label="View project: San Leandro">
-          <figure class="media media--fill media--dark"><img src="assets/images/san-leandro/san-leandro-01.jpg" srcset="assets/images/san-leandro/san-leandro-01-sm.jpg 1000w, assets/images/san-leandro/san-leandro-01.jpg 2400w" sizes="100vw" width="2400" height="1600" alt="Rear of the house at dusk with glazed living wing and flat roof" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">San Leandro</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="daytonia.html" aria-label="View project: Daytonia">
-          <figure class="media media--fill media--dark"><img src="assets/images/daytonia/daytonia-02.jpg" srcset="assets/images/daytonia/daytonia-02-sm.jpg 1000w, assets/images/daytonia/daytonia-02.jpg 2034w" sizes="100vw" width="2034" height="1356" alt="Rear glass wall under a cedar-lined roof overhang at dusk" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">Daytonia</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="groveland.html" aria-label="View project: Groveland">
-          <figure class="media media--fill media--dark"><img src="assets/images/groveland/groveland-05.jpg" srcset="assets/images/groveland/groveland-05-sm.jpg 1000w, assets/images/groveland/groveland-05.jpg 2400w" sizes="100vw" width="2400" height="1652" alt="Covered rear terrace with cedar ceiling and floor-to-ceiling glass" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">Groveland</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__slide on-dark" data-slide>
-        <a class="hero__link" href="san-leandro.html" aria-label="View project: San Leandro">
-          <figure class="media media--fill media--dark"><img src="assets/images/san-leandro/san-leandro-05.jpg" srcset="assets/images/san-leandro/san-leandro-05-sm.jpg 1000w, assets/images/san-leandro/san-leandro-05.jpg 2400w" sizes="100vw" width="2400" height="1800" alt="Covered patio at dusk looking into the living room" loading="lazy" decoding="async"></figure>
-          <div class="hero__caption">
-            <p class="hero__title" data-slot="title">San Leandro</p>
-            <p class="hero__meta" data-slot="short">Dallas, Texas</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="hero__controls">
-        <button type="button" data-slide-prev aria-label="Previous image">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M13 7H1M6 2 1 7l5 5"/></svg>
-        </button>
-        <span class="hero__count">
-          <span data-slide-current>01</span>
-          <span class="hero__progress"><i data-slide-progress></i></span>
-          <span data-slide-total>07</span>
-        </span>
-        <button type="button" data-slide-next aria-label="Next image">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg>
-        </button>
       </div>
     </section>
 

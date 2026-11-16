@@ -718,7 +718,8 @@ button:hover > .arrow { width: 2.75rem; }
 .hero__controls svg { width: 0.875rem; height: 0.875rem; }
 
 @media (max-width: 40rem) {
-  .hero__caption { bottom: calc(var(--gutter) + 4rem); max-width: none; right: var(--gutter); }
+  .hero__caption { max-width: none; right: var(--gutter); }
+  .hero:has(.hero__controls) .hero__caption { bottom: calc(var(--gutter) + 4rem); }
   .hero__controls { left: var(--gutter); justify-content: space-between; }
 }
 
@@ -1238,8 +1239,19 @@ button:hover > .arrow { width: 2.75rem; }
 .footer__base a { color: var(--ink-2); transition: color 0.3s ease; }
 .footer__base a:hover { color: var(--paper); }
 
+/* Long email addresses must never widen the page */
+.footer__cols ul { grid-template-columns: minmax(0, 1fr); }
+.footer__cols a,
+.details a,
+.menu__foot a { overflow-wrap: anywhere; }
+
 @media (max-width: 48rem) {
   .footer__cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 30rem) {
+  /* Contact gets its own full-width row so the email fits on one line */
+  .footer__cols { grid-auto-flow: row dense; }
+  .footer__cols > :nth-child(2) { grid-column: 1 / -1; order: -1; }
 }
 
 /* 18. Press, journal, video ------------------------------------------------ */
