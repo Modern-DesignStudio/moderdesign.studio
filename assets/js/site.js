@@ -9,7 +9,7 @@ window.SITE = {
 
   // One entry per number; "name" is optional.
   phones: [
-    { name: "Adam", number: "(903) 975-0345" },
+    { name: "Adam Hamghalam", number: "(903) 975-0345" },
     { name: "Carmen Marenco", number: "(903) 975-0344" }
   ],
 
