@@ -5,7 +5,7 @@
    ========================================================================== */
 
 window.SITE = {
-  email: "info@moderndesignbrothers.com",
+  email: "moderndesignstudio@gmail.com",
 
   // One entry per number; "name" is optional.
   phones: [
